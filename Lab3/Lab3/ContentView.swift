@@ -13,27 +13,17 @@ struct ContentView: View {
             FirstView()
                 .tabItem {
                     Image(systemName: "list.bullet.circle")
-                    Text("First View")
+                    Text("Number List")
                 }
             SecondView()
                 .tabItem {
-                    Image(systemName: "circle.grid.cross")
-                    Text("Second View")
+                    Image(systemName: "rectangle.and.pencil.and.ellipsis")
+                    Text("Words List")
                 }
             ThirdView()
                 .tabItem {
-                    Image(systemName: "house.circle")
-                    Text("Third View")
-                }
-            FourthView()
-                .tabItem {
-                    Image(systemName: "person.circle")
-                    Text("Fourth View")
-                }
-            FifthView()
-                .tabItem {
-                    Image(systemName: "person.3.sequence")
-                    Text("Fifth View")
+                    Image(systemName: "chevron.forward.2")
+                    Text("progression")
                 }
         }
         .accentColor(.blue)
