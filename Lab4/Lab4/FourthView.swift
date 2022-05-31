@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct FourthView: View {
+    @State var dateVar = Date()
+    @State private var showAlert = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("Date Picker")
+                .font(.title)
+                .bold()
+            DatePicker("Graphical Date", selection: $dateVar)
+                .datePickerStyle(.graphical)
+            Button("Display date"){
+                showAlert = true
+            }
+            .buttonStyle(.borderedProminent)
+            .alert(isPresented: $showAlert){
+                Alert(
+                title: Text("Picked Date"),
+                message: Text(dateVar, format: Date.FormatStyle().day().month().year().hour().minute()))
+            }
+        }
     }
 }
 

@@ -4,12 +4,25 @@
 //
 //  Created by Marcin Klisz on 17/05/2022.
 //
-
 import SwiftUI
 
+func generateRandomNumber() -> String {
+    return String(Int.random(in: 0...100000))
+}
+
+
 struct ThirdView: View {
+    @State private var showText = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            if showText {
+                Text(generateRandomNumber())
+            }
+            else {
+                Text(" ")
+            }
+            Toggle("Generate String", isOn: $showText)
+        }
     }
 }
 

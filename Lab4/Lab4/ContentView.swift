@@ -9,8 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView{
+            FirstView()
+                .tabItem{
+                    Text("Text input")
+                    Image(systemName: "text.viewfinder")
+                }
+            SecondView()
+                .tabItem{
+                    Text("Text input")
+                    Image(systemName: "text.viewfinder")
+                }
+            ThirdView()
+                .tabItem{
+                    Text("Text input")
+                    Image(systemName: "text.viewfinder")
+                }
+            FourthView()
+                .tabItem{
+                    Text("text input")
+                    Image(systemName: "text.viewfinder")
+                }
+            FifthView()
+                .tabItem{
+                    Text("Image Loader")
+                    Image(systemName: "text.viewfinder")
+                }
+        }
     }
 }
 
