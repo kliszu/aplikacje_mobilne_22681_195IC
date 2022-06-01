@@ -17,23 +17,23 @@ struct ContentView: View {
                 }
             SecondView()
                 .tabItem{
-                    Text("Text input")
-                    Image(systemName: "text.viewfinder")
+                    Text("Picker")
+                    Image(systemName: "filemenu.and.selection")
                 }
             ThirdView()
                 .tabItem{
-                    Text("Text input")
-                    Image(systemName: "text.viewfinder")
+                    Text("Toogle number")
+                    Image(systemName: "number")
                 }
             FourthView()
                 .tabItem{
-                    Text("text input")
-                    Image(systemName: "text.viewfinder")
+                    Text("date picker")
+                    Image(systemName: "calendar")
                 }
             FifthView()
                 .tabItem{
                     Text("Image Loader")
-                    Image(systemName: "text.viewfinder")
+                    Image(systemName: "photo")
                 }
         }
     }

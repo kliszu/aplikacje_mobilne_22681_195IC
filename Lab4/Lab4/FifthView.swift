@@ -6,10 +6,43 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct FifthView: View {
+    @State private var showAlert = false
+    @State private var showImage = false
+    @State private var imageLoaded = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+            if showImage {
+                Image("mac")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 250.0, height: 250.0, alignment: .center)
+                    .clipShape(Circle())
+            }
+            Spacer()
+                .frame(height:100)
+            Button("Show image"){
+                showAlert = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+                    showAlert = false
+                    imageLoaded = true
+                    showImage = true
+                }
+                
+            }
+            .toast(isPresenting: $showAlert){
+                AlertToast(displayMode: .hud , type: .loading, title: "Loading image", subTitle: "Please wait!")
+            }
+            .toast(isPresenting: $imageLoaded){
+                AlertToast(displayMode: .hud, type: .regular, title: "Image Loaded")
+            }
+            .padding()
+            .buttonStyle(.borderedProminent)
+            
+        }
     }
 }
 
