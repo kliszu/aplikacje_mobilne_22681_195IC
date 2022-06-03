@@ -9,8 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView{
+            FirstView()
+                .tabItem{
+                    Text("scroll View")
+                    Image(systemName: "scroll")
+                }
+            SecondView()
+                .tabItem{
+                    Text("align View")
+                    Image(systemName: "questionmark.folder")
+                }
+            ThirdView()
+                .tabItem{
+                    Text("gestures")
+                    Image(systemName: "hand.tap")
+                }
+            GestureView()
+                .tabItem{
+                    Text("gestures")
+                    Image(systemName: "hand.tap")
+                }
+            FourthView()
+                .tabItem{
+                    Text("list with swipe")
+                    Image(systemName: "hand.draw")
+                }
+        }
     }
 }
 

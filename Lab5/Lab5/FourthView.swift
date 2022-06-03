@@ -79,10 +79,6 @@ struct FourthView: View {
     }
 }
 
-func addToFav(name: String){
-    favContacts.append(Contact(name: name))
-}
-
 struct FourthView_Previews: PreviewProvider {
     static var previews: some View {
         FourthView()
