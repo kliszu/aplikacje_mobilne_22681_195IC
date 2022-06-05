@@ -7,23 +7,26 @@
 
 import SwiftUI
 
-
 struct FourthView: View {
-    @State private var isAdded = false
     var body: some View {
-        NavigationView{
-            List{
-                Text("Hello World")
-                }
+        let status = Reach().connectionStatus()
+
+        switch status {
+        case .unknown, .offline:
+            VStack{
+                Image(systemName: "wifi.slash")
+                Text("Not connected")
             }
-            .navigationTitle("Contacts")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .primaryAction){
-                    NavigationLink(destination: FirstView()){
-                        Text("Favourites")
-                    }
-                }
+        case .online(.wwan):
+            VStack{
+                Image(systemName: "antenna.radiowaves.left.and.right")
+                Text("Connected via Cellular")
+            }
+        case .online(.wiFi):
+            VStack{
+                Image(systemName: "wifi")
+                Text("Connected via WiFi")
+            }
         }
     }
 }

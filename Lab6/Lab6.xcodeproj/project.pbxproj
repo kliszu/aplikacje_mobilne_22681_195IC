@@ -11,7 +11,14 @@
 		27345228284A5F1800988C32 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27345226284A5F1800988C32 /* ThirdView.swift */; };
 		2734522C284A5F2300988C32 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27345229284A5F2300988C32 /* FirstView.swift */; };
 		2734522D284A5F2300988C32 /* FourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734522A284A5F2300988C32 /* FourthView.swift */; };
-		2734522E284A5F2300988C32 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734522B284A5F2300988C32 /* GestureView.swift */; };
+		2779D445284BEE4500B02D8A /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779D444284BEE4500B02D8A /* Reach.swift */; };
+		2779D447284BF3B600B02D8A /* FifthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779D446284BF3B600B02D8A /* FifthView.swift */; };
+		2779D449284BF3C500B02D8A /* SixthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779D448284BF3C500B02D8A /* SixthView.swift */; };
+		2779D44C284BF79600B02D8A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2779D44B284BF79600B02D8A /* SDWebImageSwiftUI */; };
+		2779D453284D26D600B02D8A /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2779D452284D26D600B02D8A /* data.json */; };
+		2779D455284D295D00B02D8A /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2779D454284D295D00B02D8A /* data.txt */; };
+		2779D458284D2D4300B02D8A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2779D457284D2D4300B02D8A /* Realm */; };
+		2779D45A284D2D4300B02D8A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2779D459284D2D4300B02D8A /* RealmSwift */; };
 		27A8399C284A5DCD0095FC43 /* Lab6App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A8399B284A5DCD0095FC43 /* Lab6App.swift */; };
 		27A8399E284A5DCD0095FC43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A8399D284A5DCD0095FC43 /* ContentView.swift */; };
 		27A839A0284A5DCE0095FC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A8399F284A5DCE0095FC43 /* Assets.xcassets */; };
@@ -23,7 +30,11 @@
 		27345226284A5F1800988C32 /* ThirdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		27345229284A5F2300988C32 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		2734522A284A5F2300988C32 /* FourthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthView.swift; sourceTree = "<group>"; };
-		2734522B284A5F2300988C32 /* GestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
+		2779D444284BEE4500B02D8A /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		2779D446284BF3B600B02D8A /* FifthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthView.swift; sourceTree = "<group>"; };
+		2779D448284BF3C500B02D8A /* SixthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthView.swift; sourceTree = "<group>"; };
+		2779D452284D26D600B02D8A /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		2779D454284D295D00B02D8A /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		27A83998284A5DCD0095FC43 /* Lab6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A8399B284A5DCD0095FC43 /* Lab6App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab6App.swift; sourceTree = "<group>"; };
 		27A8399D284A5DCD0095FC43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2779D45A284D2D4300B02D8A /* RealmSwift in Frameworks */,
+				2779D458284D2D4300B02D8A /* Realm in Frameworks */,
+				2779D44C284BF79600B02D8A /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +76,16 @@
 			isa = PBXGroup;
 			children = (
 				27345229284A5F2300988C32 /* FirstView.swift */,
+				2779D446284BF3B600B02D8A /* FifthView.swift */,
+				2779D454284D295D00B02D8A /* data.txt */,
+				2779D452284D26D600B02D8A /* data.json */,
+				2779D448284BF3C500B02D8A /* SixthView.swift */,
 				2734522A284A5F2300988C32 /* FourthView.swift */,
-				2734522B284A5F2300988C32 /* GestureView.swift */,
 				27345225284A5F1800988C32 /* SecondView.swift */,
 				27345226284A5F1800988C32 /* ThirdView.swift */,
 				27A8399B284A5DCD0095FC43 /* Lab6App.swift */,
 				27A8399D284A5DCD0095FC43 /* ContentView.swift */,
+				2779D444284BEE4500B02D8A /* Reach.swift */,
 				27A8399F284A5DCE0095FC43 /* Assets.xcassets */,
 				27A839A1284A5DCE0095FC43 /* Preview Content */,
 			);
@@ -98,6 +116,11 @@
 			dependencies = (
 			);
 			name = Lab6;
+			packageProductDependencies = (
+				2779D44B284BF79600B02D8A /* SDWebImageSwiftUI */,
+				2779D457284D2D4300B02D8A /* Realm */,
+				2779D459284D2D4300B02D8A /* RealmSwift */,
+			);
 			productName = Lab6;
 			productReference = 27A83998284A5DCD0095FC43 /* Lab6.app */;
 			productType = "com.apple.product-type.application";
@@ -126,6 +149,10 @@
 				Base,
 			);
 			mainGroup = 27A8398F284A5DCD0095FC43;
+			packageReferences = (
+				2779D44A284BF79600B02D8A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				2779D456284D2D4300B02D8A /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 27A83999284A5DCD0095FC43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +167,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2779D455284D295D00B02D8A /* data.txt in Resources */,
 				27A839A3284A5DCE0095FC43 /* Preview Assets.xcassets in Resources */,
+				2779D453284D26D600B02D8A /* data.json in Resources */,
 				27A839A0284A5DCE0095FC43 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,10 +183,12 @@
 			files = (
 				27345228284A5F1800988C32 /* ThirdView.swift in Sources */,
 				2734522C284A5F2300988C32 /* FirstView.swift in Sources */,
+				2779D449284BF3C500B02D8A /* SixthView.swift in Sources */,
 				27345227284A5F1800988C32 /* SecondView.swift in Sources */,
-				2734522E284A5F2300988C32 /* GestureView.swift in Sources */,
 				27A8399E284A5DCD0095FC43 /* ContentView.swift in Sources */,
+				2779D445284BEE4500B02D8A /* Reach.swift in Sources */,
 				2734522D284A5F2300988C32 /* FourthView.swift in Sources */,
+				2779D447284BF3B600B02D8A /* FifthView.swift in Sources */,
 				27A8399C284A5DCD0095FC43 /* Lab6App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +390,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2779D44A284BF79600B02D8A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		2779D456284D2D4300B02D8A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2779D44B284BF79600B02D8A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2779D44A284BF79600B02D8A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		2779D457284D2D4300B02D8A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2779D456284D2D4300B02D8A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2779D459284D2D4300B02D8A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2779D456284D2D4300B02D8A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27A83990284A5DCD0095FC43 /* Project object */;
 }

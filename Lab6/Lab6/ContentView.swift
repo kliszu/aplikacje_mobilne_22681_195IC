@@ -12,28 +12,27 @@ struct ContentView: View {
         TabView{
             FirstView()
                 .tabItem{
-                    Text("scroll View")
-                    Image(systemName: "scroll")
+                    Image(systemName: "1.square.fill")
                 }
             SecondView()
                 .tabItem{
-                    Text("align View")
-                    Image(systemName: "questionmark.folder")
+                    Image(systemName: "2.square.fill")
                 }
             ThirdView()
                 .tabItem{
-                    Text("gestures")
-                    Image(systemName: "hand.tap")
-                }
-            GestureView()
-                .tabItem{
-                    Text("gestures")
-                    Image(systemName: "hand.tap")
+                    Image(systemName: "3.square.fill")
                 }
             FourthView()
                 .tabItem{
-                    Text("list with swipe")
-                    Image(systemName: "hand.draw")
+                    Image(systemName: "4.square.fill")
+                }
+            FifthView()
+                .tabItem{
+                    Image(systemName: "5.square.fill")
+                }
+            SixthView()
+                .tabItem{
+                    Image(systemName: "6.square.fill")
                 }
         }
     }

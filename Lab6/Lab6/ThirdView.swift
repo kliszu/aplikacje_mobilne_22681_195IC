@@ -6,23 +6,35 @@
 //
 
 import SwiftUI
+import SDWebImage
+import SDWebImageSwiftUI
+
 
 struct ThirdView: View {
+    var url = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F75%2F68%2F84%2F75688456e90445e05aeeecfa35f73723.jpg&f=1&nofb=1"
     var body: some View {
         VStack{
-            Text("Double tap gesture")
-                .onTapGesture(count: 2) {
-                    print("Double tapped!")
-                }
-                .padding()
-                .border(Color.black, width: 2)
-            Text("Long Pressed")
-                .onLongPressGesture(minimumDuration: 2) {
-                    print("Long pressed!")
-                }
-                .padding()
-                .border(Color.black, width: 2)
+            WebImage(url: URL(string: url))
+                .resizable()
+                    .placeholder(Image(systemName: "photo"))
+                    .placeholder {
+                        Rectangle().foregroundColor(.gray)
+                    }
+                    .indicator(.progress)
+                    .transition(AnyTransition.flipFromLeft)
+                    .scaledToFit()
+                    .frame(width: 300, height: 300, alignment: .center)
+                    .padding()
+            HStack{
+                Image(systemName: "exclamationmark.square.fill")
+                Image(systemName: "lungs.fill")
+                Image(systemName: "heart.text.square")
+                Image(systemName: "timeline.selection")
+                Image(systemName: "gamecontroller.fill")
+            }
+            .padding()
         }
+        
     }
 }
 
