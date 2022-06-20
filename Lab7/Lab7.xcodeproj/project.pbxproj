@@ -11,8 +11,10 @@
 		276DDA3B2857A18B00F38D75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DDA3A2857A18B00F38D75 /* ContentView.swift */; };
 		276DDA3D2857A18E00F38D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276DDA3C2857A18E00F38D75 /* Assets.xcassets */; };
 		276DDA402857A18E00F38D75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276DDA3F2857A18E00F38D75 /* Preview Assets.xcassets */; };
-		276DDA422857A18E00F38D75 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DDA412857A18E00F38D75 /* Persistence.swift */; };
-		276DDA452857A18E00F38D75 /* Lab7.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 276DDA432857A18E00F38D75 /* Lab7.xcdatamodeld */; };
+		27C63FE028610A4600634F22 /* Lab7.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27C63FDE28610A4600634F22 /* Lab7.xcdatamodeld */; };
+		27C63FE228610FDA00634F22 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C63FE128610FDA00634F22 /* DataController.swift */; };
+		27C63FE428611DC200634F22 /* CompletedTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C63FE328611DC200634F22 /* CompletedTaskView.swift */; };
+		27C63FE628611DD200634F22 /* PendingTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C63FE528611DD200634F22 /* PendingTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +23,11 @@
 		276DDA3A2857A18B00F38D75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		276DDA3C2857A18E00F38D75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		276DDA3F2857A18E00F38D75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		276DDA412857A18E00F38D75 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		276DDA442857A18E00F38D75 /* Lab7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lab7.xcdatamodel; sourceTree = "<group>"; };
+		27C63FDF28610A4600634F22 /* Lab7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lab7.xcdatamodel; sourceTree = "<group>"; };
+		27C63FE128610FDA00634F22 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		27C63FE328611DC200634F22 /* CompletedTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskView.swift; sourceTree = "<group>"; };
+		27C63FE528611DD200634F22 /* PendingTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingTaskView.swift; sourceTree = "<group>"; };
+		27C63FE7286124BE00634F22 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				276DDA382857A18B00F38D75 /* Lab7App.swift */,
+				27C63FDE28610A4600634F22 /* Lab7.xcdatamodeld */,
+				27C63FE128610FDA00634F22 /* DataController.swift */,
 				276DDA3A2857A18B00F38D75 /* ContentView.swift */,
+				27C63FE328611DC200634F22 /* CompletedTaskView.swift */,
+				27C63FE528611DD200634F22 /* PendingTaskView.swift */,
 				276DDA3C2857A18E00F38D75 /* Assets.xcassets */,
-				276DDA412857A18E00F38D75 /* Persistence.swift */,
-				276DDA432857A18E00F38D75 /* Lab7.xcdatamodeld */,
 				276DDA3E2857A18E00F38D75 /* Preview Content */,
+				27C63FE7286124BE00634F22 /* README.md */,
 			);
 			path = Lab7;
 			sourceTree = "<group>";
@@ -143,10 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				276DDA422857A18E00F38D75 /* Persistence.swift in Sources */,
+				27C63FE428611DC200634F22 /* CompletedTaskView.swift in Sources */,
+				27C63FE028610A4600634F22 /* Lab7.xcdatamodeld in Sources */,
+				27C63FE228610FDA00634F22 /* DataController.swift in Sources */,
+				27C63FE628611DD200634F22 /* PendingTaskView.swift in Sources */,
 				276DDA3B2857A18B00F38D75 /* ContentView.swift in Sources */,
 				276DDA392857A18B00F38D75 /* Lab7App.swift in Sources */,
-				276DDA452857A18E00F38D75 /* Lab7.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,12 +359,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		276DDA432857A18E00F38D75 /* Lab7.xcdatamodeld */ = {
+		27C63FDE28610A4600634F22 /* Lab7.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				276DDA442857A18E00F38D75 /* Lab7.xcdatamodel */,
+				27C63FDF28610A4600634F22 /* Lab7.xcdatamodel */,
 			);
-			currentVersion = 276DDA442857A18E00F38D75 /* Lab7.xcdatamodel */;
+			currentVersion = 27C63FDF28610A4600634F22 /* Lab7.xcdatamodel */;
 			path = Lab7.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
